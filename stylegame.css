@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0
+}
+
+body{
+    background: linear-gradient(180deg, #100F0F 28.63%, #24293A 50%, #6B1A5A 70.83%, #3C2347 86.98%);
+}
+.game_fondo{
+    background: url(images/motivo\ gm.png) no-repeat center ;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: brightness(0.1);
+
+}
+.texto{
+    width: fit-content;
+    left: 3%;
+}
+.icono{
+    background: url(images/icono\ logo.png) no-repeat ;
+    background-origin: content-box;
+    background-position: 0px;
+}
+.game_text{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.game_text{
+    background: -webkit-linear-gradient(90deg, #B003CA 4.57%, #75228E 45.64%, #4316A1 86.83%);
+     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.game_section{
+    height: 500vh;
+}
