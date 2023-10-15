@@ -10,7 +10,7 @@
     padding: 0;
 }
 .inicio{
-    height: 85vh;
+    height: 100vh;
 }
 .logo{
     object-fit: cover;
@@ -121,24 +121,27 @@
 .pop_up{
     width: 50vw;
     height: 60vh;
-    background: linear-gradient(0deg,rgb(245, 4, 36),rgb(81, 0, 128)) ;
+    background: linear-gradient(90deg, #ca033f 12.48%, #962db6 47.55%, #1e15a0 83.54%);
+    background-size: 300% 500%;
     color: white;
     left: 25%;
     filter: drop-shadow(10px 10px 6px #484747d2);
-    animation: trasladar 1s ;
+    animation: trasladar 2s , change 6s infinite ;
     opacity: 0.9;
 
 }
 .pop_up_text{
-    width: 98%;
-    height: 98%;
+    width: 97%;
+    height: 95%;
     background: black;
 }
 
 .pop_up .gamer{
-    background: -webkit-linear-gradient(270deg, #a70f3d, #6b1e97);
+    background: linear-gradient(90deg, #ca033f 12.48%, #962db6 47.55%, #1e15a0 83.54%);
+    background-size: 300% 500%;
      -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: change 6s infinite;
 }
 
 .btnclose{
@@ -163,3 +166,15 @@
         transform: rotateY(180);
     }
   }
+
+  @keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}

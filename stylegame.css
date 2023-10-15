@@ -19,16 +19,16 @@ body{
 }
 .icono{
     background: url(images/icono\ logo.png) no-repeat ;
+    background-size: contain;
     background-origin: content-box;
     background-position: 0px;
 }
-.game_text{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
 
 .game_text{
+    width: 55%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background: -webkit-linear-gradient(90deg, #B003CA 4.57%, #75228E 45.64%, #4316A1 86.83%);
-     -webkit-background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .game_section{
@@ -38,6 +38,31 @@ body{
 /* -------------- transicion ----------------------------*/
 
 .transition{
-    height: 30vh;
-    background: linear-gradient(180deg, #B003CA 12.48%, #8E2884 47.55%, #4215A0 83.54%);
+    height: 40vh;
+    background: linear-gradient(90deg, #ca033f 12.48%, #962db6 47.55%, #1e15a0 83.54%);
+    background-size: 300% 500%;
+    animation: change 3s infinite ease-in-out;
+}
+.transition_text{
+    height: 90%;
+    width: 98%;
+    background-color: rgba(0, 0, 0, 0.904);
+}
+.transition_text h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: -webkit-linear-gradient(90deg, #B003CA 4.57%, #75228E 45.64%, #4316A1 86.83%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
 }
