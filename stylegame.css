@@ -34,3 +34,10 @@ body{
 .game_section{
     height: 500vh;
 }
+
+/* -------------- transicion ----------------------------*/
+
+.transition{
+    height: 30vh;
+    background: linear-gradient(180deg, #B003CA 12.48%, #8E2884 47.55%, #4215A0 83.54%);
+}
