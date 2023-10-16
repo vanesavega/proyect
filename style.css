@@ -48,36 +48,28 @@
 
 /* -------------------------------- que es -------------------------------- */
 .descripcion{
-    height: 90vh;
+    height: 98vh;
     color: white;
 }
 
 .descripcion_fondo{
-    width: 60%;
-    background: var(--cafeoscuro) url(images/motivo3.png) no-repeat  ;
+    width: 70%;
+    background: #837561 url(images/motivo3.png) no-repeat  ;
     background-size: cover;
     background-blend-mode: luminosity;
     filter: brightness(0.8);
     box-shadow: 20px 10px  10px  rgba(0, 0, 0, 0.452);
 }
 
-.titulo{
-    font-size: 10em;
-}
-
-.texto{
-    font-size: 5em;
-}
-
 /* -------------------------------- sobre nos -------------------------------- */
 .transicion2{
-    height: 8vh;
+    height: 10vh;
     background-color: #30241d;
     color: rgb(46, 44, 43);
 }
 
 .sobre_nos{
-    min-height: 95vh;
+    min-height: 80vh;
 }
 
 .fondo_sobre_nos{
@@ -110,7 +102,15 @@
 }
 
 .dif{
-    height: 70vh;
+    min-height: 75vh;
+    height: fit-content;
+    padding: 2% 10%;
+}
+.dif_texto  .texto1 {
+    flex: 1 0 20vw;
+}
+.dif_texto  h5 {
+    flex: 3 0 20vw;
 }
 
 .footer{
@@ -127,13 +127,13 @@
     left: 25%;
     filter: drop-shadow(10px 10px 6px #484747d2);
     animation: trasladar 2s , change 6s infinite ;
-    opacity: 0.9;
+    opacity: 0.98;
 
 }
 .pop_up_text{
     width: 97%;
     height: 95%;
-    background: black;
+    background: rgb(19, 18, 18);
 }
 
 .pop_up .gamer{
@@ -148,13 +148,21 @@
     cursor: pointer;
 }
 
+.pilares{
+    height: 90vh;
+}
+.pilares_fondo{
+    background-color: #1e15a0;
+    background: url(images/image\ pil.png) no-repeat fixed;
+    background-size: cover;
+}
 @keyframes trasladar {
     0% {
       transform: scale(0.8);
       opacity: 0.4;
     }
     100% {
-      opacity: 0.9;
+      opacity: 0.98;
     }
   }
 
