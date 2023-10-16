@@ -9,6 +9,38 @@
     margin: 0;
     padding: 0;
 }
+
+
+.pop_up{
+    width: 50vw;
+    height: 60vh;
+    background: linear-gradient(90deg, #ca033f 12.48%, #962db6 47.55%, #1e15a0 83.54%);
+    background-size: 300% 500%;
+    color: white;
+    left: 25%;
+    filter: drop-shadow(10px 10px 6px #484747d2);
+    animation: trasladar 2s , change 6s infinite ;
+    opacity: 0.98;
+
+}
+.pop_up_text{
+    width: 97%;
+    height: 95%;
+    background: rgb(19, 18, 18);
+}
+
+.pop_up .gamer{
+    background: linear-gradient(90deg, #ca033f 12.48%, #962db6 47.55%, #1e15a0 83.54%);
+    background-size: 300% 500%;
+     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: change 6s infinite;
+}
+
+.btnclose{
+    cursor: pointer;
+}
+
 .inicio{
     height: 100vh;
 }
@@ -41,8 +73,8 @@
 /* -------------------------------- parrafo  -------------------------------- */
 
 .transicion{
-    height: 15svh;
-    background-color: rgb(26, 21, 16) ;
+    height: 20vh;
+    background-color: rgb(94, 80, 72) ;
     color: white;
 }
 
@@ -58,11 +90,12 @@
     background-size: cover;
     background-blend-mode: luminosity;
     filter: brightness(0.8);
-    box-shadow: 20px 10px  10px  rgba(0, 0, 0, 0.452);
+    box-shadow: 10px 10px  10px  rgba(65, 64, 64, 0.336);
 }
 
 /* -------------------------------- sobre nos -------------------------------- */
 .transicion2{
+    margin: auto;
     height: 10vh;
     background-color: #30241d;
     color: rgb(46, 44, 43);
@@ -72,12 +105,15 @@
     min-height: 80vh;
 }
 
+
 .fondo_sobre_nos{
     background: url(images/fondo\ about.png) no-repeat fixed;
     background-size: cover;
     filter: contrast(0.4) brightness(0.9) sepia(0.3);
 }
-
+.sobre_nos_title{
+    mix-blend-mode: overlay;
+}
 .texto_sobre_nos{
     min-height: 90vh;
     width: 80%;
@@ -91,7 +127,7 @@
 }
 
 .tarjeta{
-    height: 50vh;
+    height: 55vh;
     color: white;
     min-width:fit-content;
     background-color: #42403f;
@@ -102,9 +138,12 @@
 }
 
 .dif{
-    min-height: 75vh;
+    min-height: 80vh;
     height: fit-content;
     padding: 2% 10%;
+}
+.dif_texto{
+    background-color: #d4ccc86c;
 }
 .dif_texto  .texto1 {
     flex: 1 0 20vw;
@@ -112,50 +151,33 @@
 .dif_texto  h5 {
     flex: 3 0 20vw;
 }
-
-.footer{
-    height: 20vh;
-    background-color: #966f48;
-}
-
-.pop_up{
-    width: 50vw;
-    height: 60vh;
-    background: linear-gradient(90deg, #ca033f 12.48%, #962db6 47.55%, #1e15a0 83.54%);
-    background-size: 300% 500%;
-    color: white;
-    left: 25%;
-    filter: drop-shadow(10px 10px 6px #484747d2);
-    animation: trasladar 2s , change 6s infinite ;
-    opacity: 0.98;
-
-}
-.pop_up_text{
-    width: 97%;
-    height: 95%;
-    background: rgb(19, 18, 18);
-}
-
-.pop_up .gamer{
-    background: linear-gradient(90deg, #ca033f 12.48%, #962db6 47.55%, #1e15a0 83.54%);
-    background-size: 300% 500%;
-     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: change 6s infinite;
-}
-
-.btnclose{
-    cursor: pointer;
+.color{
+    width: 20%;
+    height: 10%;
 }
 
 .pilares{
-    height: 90vh;
+    height: 95vh;
 }
 .pilares_fondo{
     background-color: #1e15a0;
     background: url(images/image\ pil.png) no-repeat fixed;
     background-size: cover;
+    filter: brightness(0.4) grayscale(1.2) contrast(0.8);
 }
+
+.pil_img{
+    bottom: 0;
+}
+.pil_text{
+    color: rgba(255, 255, 255, 0.589);
+}
+
+footer{
+    height: 20vh;
+    background-color: #252524;
+}
+
 @keyframes trasladar {
     0% {
       transform: scale(0.8);
