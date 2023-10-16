@@ -151,17 +151,13 @@
 .dif_texto  h5 {
     flex: 3 0 20vw;
 }
-.color{
-    width: 20%;
-    height: 10%;
-}
 
 .pilares{
-    height: 95vh;
+    height: 98vh;
 }
 .pilares_fondo{
-    background-color: #1e15a0;
-    background: url(images/image\ pil.png) no-repeat fixed;
+    background-color: #000000;
+    background: url(images/image\ pill.png) no-repeat fixed;
     background-size: cover;
     filter: brightness(0.4) grayscale(1.2) contrast(0.8);
 }

@@ -72,10 +72,10 @@ h1{
 .mosaico::after , .game_c_conatiner::after{
     content: "";
     width: 102%;
-    height: 102%;
+    height: 100%;
     position: absolute;
     bottom: 0;
-    right: 0;
+    left:0;
     display: block;
     background-color: white;
     background: linear-gradient(90deg, #ca033f 12.48%, #962db6 47.55%, #1e15a0 83.54%);
@@ -84,8 +84,8 @@ h1{
     z-index: -1;
 }
 .game_c_conatiner::after{
-    left: 0;
-    top: 0;
+    width: 104%;
+    left: -2%;
 }
 
 @keyframes change{
