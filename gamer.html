@@ -38,35 +38,42 @@
         perspiciatis!</h4>
     </div>
   </section>
-  <section class="game_choise vw-100  row justify-content-center aling-items-center">
-    <div class="game_c_conatiner position-relative z-5 d-inline-block me-3 h-100 p-5 col-sm-4 d-flex flex-column justify-content-evenly aling-items-center">
+  <section class="section m-auto">
+
+  </section>
+  <section class="game_choise vw-100  row justify-content-center aling-items-center mt-5">
+    <div
+      class="game_c_conatiner position-relative z-5 d-inline-block me-5 p-5 col-sm-4 d-flex flex-column justify-content-evenly aling-items-center">
       <div class="d-block w-auto h-auto">
-        <h1 class=" text-center"> Escoge tu estilo</h1>
-        <h1 class="text-center">ideal</h1>
+        <h1 class="text-center display-4"> Elije tu estilo</h1>
+        <h1 class="text-center display-4">ideal</h1>
       </div>
-      <p class="text-light lh-lg fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, qui?
+      <p class="text-light lh-lg fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, qui?
         Consequatur dolorum quam mollitia quibusdam recusandae voluptatem, saepe necessitatibus sunt earum ea,
         reiciendis cupiditate illo quo repudiandae tenetur excepturi at.</p>
-      <div class="colores d-inline-block  w-100 d-flex justify-content-between">
-        <div class="color d-inline-block rounded-5 me-1 shadow bg-warning"></div>
-        <div class="color d-inline-block rounded-5 me-1 shadow bg-danger"></div>
-        <div class="color d-inline-block rounded-5 me-1 shadow bg-primary"></div>
-        <div class="color d-inline-block rounded-5 shadow bg-warning"></div>
+      <div class="colores d-inline-block  w-75 d-flex justify-content-between flex-wrap align-self-center">
+        <div id="naranja" class="color d-inline-block rounded-5 " onclick="mostrarfotos(id)""></div>
+        <div id="rojo" class="color d-inline-block rounded-5  " onclick="mostrarfotos(id)"></div>
+        <div id="morado" class="color d-inline-block rounded-5 " onclick="mostrarfotos(id)"></div>
+        <div id="blanco" class="color d-inline-block rounded-5 " onclick="mostrarfotos(id)">
+        </div>
       </div>
     </div>
-    <div class="mosaico position-relative z-5 h-75 col-sm-5 d-flex flex-column bg-secondary p-0 align-self-center bg-black">
-      <div class="d-inline-block w-100 h-75 pb-2">
-        <img src="images/mesa.png" class="w-100 h-100 object-fit-cover" alt="">
+    <div
+      class="mosaico position-relative z-5 h-75 col-sm-5 d-flex flex-column bg-secondary p-0 align-self-center bg-black">
+      <div class="d-inline-block w-100 h-75 px-2 pt-2 overflow-hidden">
+        <img id="imgppal" src="images/mesad.png" class="w-100 h-100 object-fit-cover" alt="">
       </div>
-      <div class="d-inline-block w-100 h-25 d-flex  justify-content-between ">
-        <img src="images/mesa.png" class=" mosaico_img d-inline-block h-100 object-fit-cover bg-secondary"  alt="">
-        <img src="images/mesa.png" class=" mosaico_img d-inline-block h-100 object-fit-cover bg-secondary"  alt="">
-        <img src="images/mesa.png" class=" mosaico_img d-inline-block h-100 object-fit-cover bg-secondary"  alt="">
-        <img src="images/mesa.png" class=" mosaico_img d-inline-block h-100 object-fit-cover bg-secondary"  alt="">
+      <div id="mosaico" class="row_img d-inline-block w-100 h-25 d-flex justify-content-between p-2 overflow-hidden  ">
+        <img src="images/m_naranja/4.png" class=" mosaico_img d-inline-block h-100 object-fit-cover" alt="">
+        <img src="images/m_rojo/4.png" class=" mosaico_img d-inline-block h-100 object-fit-cover" alt="">
+        <img src="images/m_morado/4.png" class=" mosaico_img d-inline-block h-100 object-fit-cover" alt="">
+        <img src="images/m_blanco/4.png" class=" mosaico_img d-inline-block h-100 object-fit-cover" alt="">
       </div>
     </div>
   </section>
 
+  <script src="appgame.js"></script>
 </body>
 
 </html>

@@ -9,7 +9,11 @@
     margin: 0;
     padding: 0;
 }
-
+.blur_active{ 
+    filter: blur(4px);
+    pointer-events: none;
+    user-select: none;
+}
 
 .pop_up{
     width: 50vw;
@@ -29,7 +33,7 @@
     background: rgb(19, 18, 18);
 }
 
-.pop_up .gamer{
+.pop_up .gamer , .pop_up .link:hover{
     background: linear-gradient(90deg, #ca033f 12.48%, #962db6 47.55%, #1e15a0 83.54%);
     background-size: 300% 500%;
      -webkit-background-clip: text;
@@ -69,6 +73,11 @@
 .btn_inicio p{
     font-size: 80px;
 }
+
+.btn_inicio:hover{
+    filter: brightness(1.1) drop-shadow(0 0 1rem rgb(197, 117, 117));
+}
+
 
 /* -------------------------------- parrafo  -------------------------------- */
 
