@@ -90,7 +90,12 @@
 /* -------------------------------- que es -------------------------------- */
 .descripcion{
     height: 98vh;
-    color: white;
+    background-color: rgb(187, 184, 181);
+    color: rgb(255, 255, 255);
+}
+.franja{
+    width: 25%;
+    background-color: #3a3427
 }
 
 .descripcion_fondo{
@@ -100,6 +105,23 @@
     background-blend-mode: luminosity;
     filter: brightness(0.8);
     box-shadow: 10px 10px  10px  rgba(65, 64, 64, 0.336);
+}
+.description_text {
+    background-color: #251d1d;
+    min-width: 50%;
+    flex: 0 0 50vw;
+}
+
+.description_text_img{
+    background: url(images/prueba.png) ;
+    background-size:contain;
+    background-attachment: fixed;
+    background-position: 40% 100%;
+    height: 60%;
+    min-width: 20vh;
+    flex: 0 0 25vw ;
+    left: -5%;
+
 }
 
 /* -------------------------------- sobre nos -------------------------------- */
@@ -151,12 +173,14 @@
 }
 
 .dif{
+    background-color: rgb(134, 134, 134);
     min-height: 80vh;
     height: fit-content;
     padding: 2% 10%;
 }
 .dif_texto{
-    background-color: #d4ccc86c;
+    background-color: #110b08d0;
+    color: white;
 }
 .dif_texto  .texto1 {
     flex: 1 0 20vw;
