@@ -7,7 +7,7 @@ body{
     background: linear-gradient(180deg, #100F0F 28.63%, #24293A 50%, #6B1A5A 70.83%, #3C2347 86.98%);
 }
 .game_fondo{
-    background: url(images/motivo\ gm.png) no-repeat center ;
+    background: url(../images/motivo\ gm.png) no-repeat center ;
     background-size: cover;
     background-attachment: fixed;
     filter: brightness(0.1);
@@ -18,7 +18,7 @@ body{
     left: 3%;
 }
 .icono{
-    background: url(images/icono\ logo.png) no-repeat ;
+    background: url(../images/icono\ logo.png) no-repeat ;
     background-size: contain;
     background-origin: content-box;
     background-position: 0px;
@@ -102,6 +102,7 @@ h1{
     height: 100%;
     bottom: 0;
     left: -2%;
+    color: white;
 }
 .mosaico_img:hover{
     padding: 1%;

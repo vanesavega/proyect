@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0
+}
+#ventana_modal{
+    width: 70vh;
+    height: auto;
+    min-height: 60vh;
+    background-color: #EED9C4;
+    margin: auto;
+}
+
+.projects_mosaico{
+    height: 60vh;
+    min-height: fit-content;
+}
+
+.project_mosaico_content{
+    width: 20%;
+    height: 45%;
+    margin: 1%;
+    position: relative;
+    border: solid 0.2em rgb(31, 30, 30);
+    color: white;
+    text-align: center;
+    border-radius: 5%;
+    overflow: hidden;
+}
+.project_mosaico_content:hover{
+    filter: brightness(0.8) drop-shadow(2px 2px rgb(182, 167, 167));
+    cursor: pointer;
+}
+
+.project_mosaico_img{
+    position: relative ;
+    object-fit: fill;
+}
+.project_mosaico_text{
+    background-color: rgb(53, 41, 41);
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+}

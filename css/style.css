@@ -100,7 +100,7 @@
 
 .descripcion_fondo{
     width: 70%;
-    background: #837561 url(images/motivo3.png) no-repeat  ;
+    background: #837561 url(../images/motivo3.png) no-repeat  ;
     background-size: cover;
     background-blend-mode: luminosity;
     filter: brightness(0.8);
@@ -113,7 +113,7 @@
 }
 
 .description_text_img{
-    background: url(images/prueba.png) ;
+    background: url(../images/prueba.png) ;
     background-size:contain;
     background-attachment: fixed;
     background-position: 40% 100%;
@@ -138,7 +138,7 @@
 
 
 .fondo_sobre_nos{
-    background: url(images/fondo\ about.png) no-repeat fixed;
+    background: url(../images/fondo\ about.png) no-repeat fixed;
     background-size: cover;
     filter: contrast(0.4) brightness(0.9) sepia(0.3);
 }
@@ -194,7 +194,7 @@
 }
 .pilares_fondo{
     background-color: #000000;
-    background: url(images/image\ pill.png) no-repeat fixed;
+    background: url(../images/image\ pill.png) no-repeat fixed;
     background-size: cover;
     filter: brightness(0.4) grayscale(1.2) contrast(0.8);
 }

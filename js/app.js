@@ -14,7 +14,6 @@ btn_close.addEventListener('click', ()=>{
     main.classList.remove('blur_active')
 
 })
-
 // ---------------- tarjeta -------------------------------------------------------
 
 function voltear(e,value){
