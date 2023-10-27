@@ -39,8 +39,7 @@ function mostrarVentana(e){
     listadeproyectos.forEach(proyecto =>{
         const {titulo_ppal,adecuaciones,imagenes} = proyecto;
         if(proyectoenHTML.id === ('proyecto_'+titulo_ppal)){
-            ventanaModal.classList.remove('invisible')
-            ventanaModal.innerHTML= `${adecuaciones}`
+            console.log(proyectoenHTML)
         }
     })
 

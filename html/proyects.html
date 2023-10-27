@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,22 +11,92 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <title>D'kot.co | proyectos</title>
 </head>
+
 <body>
-    <section id="ventana_modal" class="invisible position-absolute z-2" >
+    <section id="ventana_modal" class="invisible position-absolute z-2">
         <div id="modal_content" class="modal_content d-inline-block w-75 h-auto margin auto p-3">
 
         </div>
     </section>
     <div class="main">
-        <section class="projects_mosaico d-inline-block vw-100 bg-success p-2 d-flex flex-column justify-content-center align-items-center">
-            <div class="d-inline-block w-75 h-75 p-2 bg-white ">
-                <h1  class="text-center">Dale un vistazo a algunos de Nuestros proyectos</h1>
+        <header class="inicio vw-100 position-relative ">
+            <nav></nav>
+        </header>
+        <section class="productos vw-100 position-relative">
+            <div class="franja uno top-0 start-0 d-block vw-100 position-absolute z-0"></div>
+            <div class="franja dos bottom-0 start-0 start-0 d-block vw-100 position-absolute z-0"></div>
+            <div
+                class="products_content d-inline-block w-100 h-100 position-relative d-flex justify-content-center align-items-center z-1 flex-wrap">
+                <div
+                    class="products_description d-inline-block me-5 d-flex flex-column justify-content-evenly aling-items-center px-5">
+                    <h1 class="text-center">Nuestros Productos</h1>
+                    <p class="fs-4 text-center lh-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Exercitationem doloribus veritatis fugit quia sed eum, recusandae aspernatur mollitia aliquam
+                        eius iusto totam voluptatibus quo? Pariatur, illo at. Alias, corrupti doloremque.
+                    </p>
+                    <button type="button"
+                        class="btn_inicio  d-inline-block w-50 position-relative z-2 align-self-center"
+                        h-ref:"descripcion">
+                        <a href="#descripcion"
+                            class="d-block w-100 h-100 text-decoration-none text-light d-flex justify-content-center">
+                            <h5 class="align-self-center">Conoce Más</h5>
+                        </a>
+                    </button>
+                </div>
+                <div class="products_carousel overflow-hidden position-relative">
+                    <img src="../images/products/silla.png" class="d-inline-block w-100  object-fit-cover" alt="">
+                    <div
+                        class="carousel_text d-inline-block w-100 d-flex flex-column justify-content-evenly align-items-center p-3">
+                        <div class="carousel_title mb-3 d-flex aling-items-center justify-content-center">
+                            <h3 class="text-center d-flex justify-content-center align-items-center">Sofa Ergonomico</h3>
+                        </div>
+                        <p class="text-light mx-5 ">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi commodi architecto
+                            laudantium
+                            nobis praesentium amet corporis accusantium debitis similique obcaecati fuga incidunt,
+                        </p>
+                        <span class="botones text-light z-1 ">
+                            <i class="left  bi bi-caret-left-square-fill top-50 start-0 translate-middle-y position-absolute"></i>
+                            <i class="right bi bi-caret-right-square-fill top-50 end-0 translate-middle-y position-absolute"></i>
+                        </span>
+                        <span class="list_line position-absolute d-flex bottom-0 start-50 translate-middle-x text-light z-1">    
+                            <i class="bi bi-dash-lg"></i>
+                            <i class="bi bi-dash-lg"></i>
+                            <i class="bi bi-dash-lg"></i>
+                            <i class="bi bi-dash-lg"></i>                               
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section
+            class="projects_mosaico d-inline-block vw-100 p-2 d-flex flex-column justify-content-center align-items-center position-relative">
+            <div class="proyects_background d-inline-block p-4 bg-white d-flex flex-column justify-content-evenly ">
+                <h1 class="text-center">Dale un vistazo a algunos de Nuestros proyectos</h1>
                 <div id="projects_list" class="d-flex flex-wrap"></div>
             </div>
         </section>
+
+        <section
+            class="lineas_trabajo d-inline-block vw-100 d-flex px-5">
+            <div class="lineas_text w-50 h-100 d-flex flex-column justify-content-between align-items-center p-5  ">
+                <h1 class="pb-2">Lineas de Trabajo</h1>
+                <div class="item d-block w-100 text-light text-center fs-4 p-3 m-2 d-flex justify-content-center align-items-center"><p >Adecuación y Renovación de Espcios</p></div>
+                <div class="item d-block w-100 text-light text-center fs-4 p-3 m-2 d-flex justify-content-center align-items-center"><p >Adecuación de Espacios Nuevos</p></div>
+                <div class="item d-block w-100 text-light text-center fs-4 p-3 m-2 d-flex justify-content-center align-items-center"><p >Adecuacion de Áreas de Trabajo</p></div>
+                <div class="item d-block w-100 text-light text-center fs-4 p-3 m-2 d-flex justify-content-center align-items-center"><p >Adecuación de Espacios Comerciales</p></div>
+                <div class="item d-block w-100 text-light text-center fs-4 p-3 m-2 d-flex justify-content-center align-items-center"><p >Nuestros proximos Productos</p></div>
+            </div>
+            <div class="lienas_img w-50 h-100  p-5 text-center">
+                <img src="../images/lineas_t.png" height="100%" alt="">
+            </div>
+        </section>
     </div>
-    
+
     <script src="../js/projectsdb.js"></script>
     <script src="../js/project.js"></script>
 </body>
+
 </html>

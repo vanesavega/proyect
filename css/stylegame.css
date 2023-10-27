@@ -62,7 +62,8 @@ h1{
 }
 
 .game_choise{
-    height: 110vh;
+    height: fit-content;
+    min-height: 50vh;
 }
 .mosaico_img{
     width: 24%;

@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0
 }
+:root{
+    --degradado: linear-gradient(90deg, #BA2CDD 3.46%, #FF1F00 102.52%);
+}
 #ventana_modal{
     width: 70vh;
     height: auto;
@@ -9,35 +12,133 @@
     background-color: #EED9C4;
     margin: auto;
 }
-
-.projects_mosaico{
-    height: 60vh;
-    min-height: fit-content;
-}
-
-.project_mosaico_content{
-    width: 20%;
-    height: 45%;
-    margin: 1%;
-    position: relative;
-    border: solid 0.2em rgb(31, 30, 30);
+.btn_inicio{
+    height: 8%;
+    background: var(--degradado);
+    box-shadow: 5px 5px 10px rgb(87, 86, 86) ;
+    border: solid 0.2em white ;
+    border-radius: 1em;
     color: white;
-    text-align: center;
-    border-radius: 5%;
-    overflow: hidden;
 }
-.project_mosaico_content:hover{
-    filter: brightness(0.8) drop-shadow(2px 2px rgb(182, 167, 167));
+
+.btn_inicio a{
+    font-size: 80px;
+}
+
+.btn_inicio:hover{
+    filter: brightness(1.1) drop-shadow(0 0 1rem rgb(197, 117, 117));
+}
+
+
+.inicio{
+    height: 20vh;
+    background-color: #2D2222;
+}
+.productos{
+    height: 110vh;
+    min-height: fit-content;
+    background-color: rgb(204, 204, 204) ;
+}
+.franja{
+    height: 10vh;
+    background-color: #403535;
+}
+.uno{height: 10vh;}
+.products_content{
+    height: 110%;
+}
+
+.products_description{
+    width: 28%;
+    height: 90%;
+    background-color: #d9d9d9;
+    z-index: 100;
+}
+
+.products_carousel{
+    width: 35%;
+    height: 70%;
+    background-color: #403535 ;
+}
+
+.products_carousel img{height: 65%;}
+.carousel_text{height: 35%;}
+
+.carousel_title{
+    width: 90%;
+    height: 25%;
+    box-shadow: 2px 2px 5px rgb(158, 153, 153);
+    background-color: #d9d9d9;
+}
+.botones i  {
+    color:rgb(34, 28, 23) ;
+    font-size: 2.5em;
+}
+.list_line i{
+    font-size: 2.1em;
+    transform: scale(1, 3); 
+}
+.list_line i:hover,  .botones i:hover {
+    filter: brightness(0.5);
     cursor: pointer;
 }
 
-.project_mosaico_img{
-    position: relative ;
-    object-fit: fill;
+.projects_mosaico{
+    background-color: #8C8989;
+    height: 60vh;
+    min-height: fit-content;
 }
+.proyects_background{
+    width: 90%;
+    height: 90%;
+    background-color: #403535;
+}
+.project_mosaico_content{
+    width: 15vw;
+    height: 40vh;
+    margin: 1%;
+    position: relative;
+    flex-flow: row wrap;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+.project_mosaico_content:hover {
+    filter: brightness(0.8) drop-shadow(2px 2px rgb(182, 167, 167));
+    cursor: pointer;
+}
+.project_mosaico_content:hover .project_mosaico_text {
+     background-color: rgba(48, 45, 45, 0.911); 
+     height: 50%;
+     transition: all 0.5s;
+}
+
+.project_mosaico_img{
+    width:  100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .project_mosaico_text{
-    background-color: rgb(53, 41, 41);
+    font-display: block;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(53, 41, 41, 0.911);
+    margin: 0;
     position: absolute;
     z-index: 1;
     bottom: 0;
+}
+.lineas_trabajo{
+    height: 100vh;
+    background-color: #d9d9d9;
+}
+.lineas_text{ height: 90%;}
+.item{
+    height: 15%;
+    box-shadow: 10px 10px 3px gray;
+    background-color: #2D2222;
 }
