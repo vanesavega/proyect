@@ -5,12 +5,35 @@
 :root{
     --degradado: linear-gradient(90deg, #BA2CDD 3.46%, #FF1F00 102.52%);
 }
-#ventana_modal{
-    width: 70vh;
-    height: auto;
-    min-height: 60vh;
-    background-color: #EED9C4;
-    margin: auto;
+.modal_active{ 
+    filter:brightness(0.5);
+    pointer-events: none;
+    user-select: none;
+}
+.ventana_modal{
+    width: 80vw;
+    height: 90vh;
+    position:fixed;
+    left: 10%;
+    top: 5%;
+    background-color: #030303b9;
+    z-index: 3;
+
+}
+.botones_modal{
+    font-size: 3em;
+    color: white;
+}
+.modal_content{
+    padding: 3%;
+    width: 90%;
+    height: fit-content;
+    background-color: #f0eaead3;
+    overflow-y: scroll;
+    color: rgb(51, 42, 35);
+}
+.modal_img{
+    height: 40vh;
 }
 .btn_inicio{
     height: 8%;
@@ -78,7 +101,7 @@
     font-size: 2.1em;
     transform: scale(1, 3); 
 }
-.list_line i:hover,  .botones i:hover {
+.list_line i:hover,  .botones i:hover , .botones_modal i:hover {
     filter: brightness(0.5);
     cursor: pointer;
 }

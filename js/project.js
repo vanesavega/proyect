@@ -1,6 +1,11 @@
 const proyectos_contenedor = document.querySelector('#projects_list');
+const main = document.querySelector('.main');
 const ventanaModal = document.querySelector('#ventana_modal');
+const contenido_vmd = document.querySelector('#modal_content')
 
+function tarjeta(){
+
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     mostrarproyectos(listadeproyectos);
@@ -20,10 +25,9 @@ function mostrarproyectos(projects){
         contenedor.classList.add('project_mosaico_content', 'project_mosaico_content:hover');
         title.innerText = titulo_ppal;
         title.classList.add('project_mosaico_text');
-        img_background.src ='../'+imagen_ppal+'.png';
+        img_background.src = imagen_ppal+'.png';
         img_background.classList.add('project_mosaico_img');
 
-        
         contenedor.appendChild(img_background)
         contenedor.appendChild(title);
         proyectos_contenedor.appendChild(contenedor)
@@ -33,16 +37,61 @@ function mostrarproyectos(projects){
 }
 
 function mostrarVentana(e){
-    
-    proyectoenHTML = e.target.parentElement
-
+    let proyectoenHTML = e.target.parentElement;
+    limpiar_contenido_vmd();
     listadeproyectos.forEach(proyecto =>{
-        const {titulo_ppal,adecuaciones,imagenes} = proyecto;
-        if(proyectoenHTML.id === ('proyecto_'+titulo_ppal)){
-            console.log(proyectoenHTML)
-        }
-    })
+        
+        if(String(proyectoenHTML.id) === ('proyecto_'+proyecto.titulo_ppal)){
+            const titulo = document.createElement('H1');
+            titulo.innerText = proyecto.titulo_ppal;
+            contenido_vmd.appendChild(titulo);
+            
+            proyecto.adecuaciones.forEach(adec => {
+                const {subtitulo, descripcion, imagenes} = adec ; 
+                let subtitulo_vmd = document.createElement('H2');
+                let descripcion_vmd = document.createElement('H4');
+                let imagenes_vmd = document.createElement('div')
 
+                for (const imgs of imagenes) {
+                    let imagen = document.createElement('IMG');
+                    imagen.src = imgs +'.png'
 
+                    imagen.classList.add('modal_img')
+                    imagenes_vmd.appendChild(imagen);
+                }
+
+                subtitulo_vmd.textContent = subtitulo;
+                descripcion_vmd.textContent = descripcion; 
+
+                contenido_vmd.append(subtitulo_vmd,descripcion_vmd,imagenes_vmd);
+            })  
+            ventanaModal.classList.remove('invisible');
+            main.classList.add('modal_active')
+        };
+    });
+    
 }
 
+function limpiar_contenido_vmd(){
+    let cont = contenido_vmd.children.length; 
+    while(cont >= 1){
+        console.log('paso');
+        console.log(contenido_vmd.lastElementChild);
+        contenido_vmd.removeChild(contenido_vmd.lastElementChild)
+        cont--;
+    }
+}
+
+function closemodal(){
+    ventanaModal.classList.add('invisible')
+    main.classList.remove('modal_active')
+}
+
+function changemodal(direccion){
+    const cont= 0;
+    if(direccion==='adelante'){
+        if(cont>=0){
+
+        }
+    }
+}

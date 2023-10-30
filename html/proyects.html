@@ -13,10 +13,13 @@
 </head>
 
 <body>
-    <section id="ventana_modal" class="invisible position-absolute z-2">
-        <div id="modal_content" class="modal_content d-inline-block w-75 h-auto margin auto p-3">
-
-        </div>
+    <section id="ventana_modal" class="ventana_modal invisible  z-3 text-center d-flex flex-column justify-content-center">
+        <span class="botones_modal text-light z-1 ">
+            <i id="btn_left_vmd" class="left  bi bi-chevron-compact-left top-50 start-0 translate-middle-y position-absolute" onclick="changemodal('atras')"></i>
+            <i id="btn_right_vmd" class="right bi bi-chevron-compact-right top-50 end-0 translate-middle-y position-absolute" onclick="changemodal('adelante')"></i>
+            <i id="btn_close_vmd" class="bi bi-x-circle-fill position-absolute top-0 start-100 translate-middle" onclick="closemodal()"></i></span> 
+        </span>
+        <div id="modal_content" class="modal_content align-self-center p-2"></div>
     </section>
     <div class="main">
         <header class="inicio vw-100 position-relative ">
@@ -44,28 +47,21 @@
                     </button>
                 </div>
                 <div class="products_carousel overflow-hidden position-relative">
-                    <img src="../images/products/silla.png" class="d-inline-block w-100  object-fit-cover" alt="">
+                    <img id="img_pdt" src="" class="d-inline-block w-100  object-fit-cover" alt="">
                     <div
                         class="carousel_text d-inline-block w-100 d-flex flex-column justify-content-evenly align-items-center p-3">
                         <div class="carousel_title mb-3 d-flex aling-items-center justify-content-center">
-                            <h3 class="text-center d-flex justify-content-center align-items-center">Sofa Ergonomico</h3>
+                            <h3 id="titulo_pdt" class="text-center d-flex justify-content-center align-items-center"></h3>
                         </div>
-                        <p class="text-light mx-5 ">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi commodi architecto
-                            laudantium
-                            nobis praesentium amet corporis accusantium debitis similique obcaecati fuga incidunt,
-                        </p>
+                        <p id="descrip_pdt" class="text-light mx-5 "></p>
                         <span class="botones text-light z-1 ">
                             <i class="left  bi bi-caret-left-square-fill top-50 start-0 translate-middle-y position-absolute"></i>
                             <i class="right bi bi-caret-right-square-fill top-50 end-0 translate-middle-y position-absolute"></i>
                         </span>
-                        <span class="list_line position-absolute d-flex bottom-0 start-50 translate-middle-x text-light z-1">    
-                            <i class="bi bi-dash-lg"></i>
-                            <i class="bi bi-dash-lg"></i>
-                            <i class="bi bi-dash-lg"></i>
-                            <i class="bi bi-dash-lg"></i>                               
-                        </span>
                     </div>
+                    <span class="list_line position-absolute d-flex bottom-0 start-50 translate-middle-x text-light z-1">    
+                        <i class="bi bi-dash-lg" onclick="swap_pdt()"></i>                            
+                    </span>
                 </div>
             </div>
 
@@ -93,7 +89,7 @@
                 <img src="../images/lineas_t.png" height="100%" alt="">
             </div>
         </section>
-    </div>
+    </div> 
 
     <script src="../js/projectsdb.js"></script>
     <script src="../js/project.js"></script>
