@@ -63,13 +63,21 @@ h1{
 
 .game_choise{
     height: fit-content;
-    min-height: 50vh;
+    min-height: 110vh;
+}
+.mosaico{
+    box-sizing:border-box;
+    resize: none;
 }
 .mosaico_img{
+    border: solid 5px red;
+    object-fit: fill;
+    height: 100%;
     width: 24%;
 }
 .game_c_conatiner{
-    height: 98%;
+    height:fit-content;
+
     background-color: rgb(0, 0, 0);
 }
 .color{

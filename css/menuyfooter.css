@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    height: 5vh;
+    background-color: rgba(0, 0, 0, 0.795);
+    padding: 2%;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 5;
+}
+.menu_link:hover{
+    background: linear-gradient(90deg, #cf8198 12.48%, #ab7ab9 47.55%, #7470a8 83.54%);
+    background-size: 300% 500%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}

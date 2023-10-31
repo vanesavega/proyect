@@ -46,5 +46,21 @@ const listadeproyectos=[
                 },
             ]
         },
+        {
+            titulo_ppal : 'otro2',
+            imagen_ppal : '../images/proyects/villa Romero/cocina R',
+            adecuaciones : [
+                    {
+                    subtitulo: 'sala',
+                    descripcion: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut itaque rem, facere rerum quisquam corporis illo accusamus nemo exercitationem deleniti voluptas recusandae vitae unde, laborum voluptates iste voluptate dolore laboriosam.',
+                    imagenes: ['../images/proyects/villa Romero/cocina A', '../images/proyects/villa Romero/cocina R', '../images/proyects/villa Romero/cocina D'],
+                    },
+                    {
+                    subtitulo: 'baño',
+                    descripcion: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut itaque rem, facere rerum quisquam corporis illo accusamus nemo exercitationem deleniti voluptas recusandae vitae unde, laborum voluptates iste voluptate dolore laboriosam.',
+                    imagenes: ['../images/proyects/villa Romero/sala A', '../images/proyects/villa Romero/sala R', '../images/proyects/villa Romero/sala D'],
+                    },
+                ]
+            },
 
 ];
