@@ -1,7 +1,7 @@
 const imgppl = document.querySelector('#imgppal');
 const mosaico = document.querySelector('#mosaico');
-const contenedor = document.querySelector('.imagenes_mesas')
-
+const contenedor = document.querySelector('#imagenes_mesas')
+const mo_after = document.querySelector('#imagenes_mesas::after')
 mosaico.addEventListener('click',swap)
 
 function swap(e){
@@ -12,7 +12,8 @@ function swap(e){
 
 function mostrarfotos(value){
     imgppl.src = "../images/m_"+value+"/"+1+".png";
-    contenedor.style.background = 'linear-gradient(0deg, #03ca14 12.48%, #b6542d 47.55%, #86a015 83.54%)'
+    color = `var(--color_${value})`;
+    document.documentElement.style.setProperty('--colorAfter', color);
     for (let cont= 0; cont < 4; cont++) {
         mosaico.children[cont].src= "../images/m_"+value+"/"+(cont+2)+".png" ;
     }   

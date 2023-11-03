@@ -4,16 +4,24 @@
 }
 
 .menu{
-    height: 5vh;
-    background-color: rgba(0, 0, 0, 0.795);
-    padding: 2%;
-    box-sizing: border-box;
+    width: 35vw;
+    margin: auto;
+    min-height: 2vh;
+    padding: 2% 0%;
+    left: 65vw;
     position: fixed;
     z-index: 5;
+    box-sizing: content-box;
 }
 .menu_link:hover{
-    background: linear-gradient(90deg, #cf8198 12.48%, #ab7ab9 47.55%, #7470a8 83.54%);
+    background: linear-gradient(90deg, #eca5bb 12.48%, #ea9eff 47.55%, #aaa4ff 83.54%);
     background-size: 300% 500%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;  
+}
+
+footer{
+    height:fit-content;
+    min-height: 25vh;
+    background-color: #252524;
 }

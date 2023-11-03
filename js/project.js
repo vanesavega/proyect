@@ -3,11 +3,21 @@ const main = document.querySelector('.main');
 const ventanaModal = document.querySelector('#ventana_modal');
 const contenido_vmd = document.querySelector('#modal_content')
 
-function tarjeta(){
+const img_pdt = document.querySelector('#img_pdt');
+const titulo_pdt = document.querySelector('#titulo_pdt');
+const descrip_pdt = document.querySelector('#descrip_pdt')
+var cont = 0; 
 
+function mostrarproducto(){
+    const {producto, description_pdt, imagen_pdt} = listaProductos[cont]
+    img_pdt.src = imagen_pdt ; 
+    titulo_pdt.textContent = producto; 
+    descrip_pdt.textContent = description_pdt
+    cont<(listaProductos.length-1) ? cont++ : cont=0 ;    
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    mostrarproducto();
     mostrarproyectos(listadeproyectos);
 });
 

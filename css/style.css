@@ -9,6 +9,9 @@
     margin: 0;
     padding: 0;
 }
+.menu{
+    background-color: #000000b5;
+}
 .blur_active{ 
     filter: blur(6px);
     pointer-events: none;
@@ -47,21 +50,35 @@
 
 .inicio{
     height: 100vh;
+    overflow: hidden;
 }
 .logo{
     object-fit: cover;
 }
 .contenedor_inicio{
-    width: 40%;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.664);
+    box-sizing: content-box;
+    position: absolute;
+    bottom: 0;
 }
-
+.carousel{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: content-box;
+    background: black url(../images/slide/back2.png) no-repeat;
+    background-size: cover;
+    animation: 20s zoom ease-in-out alternate infinite;
+}
 .motivo_inicio img{
     mix-blend-mode:hard-light;
     opacity: 0%;
 }
 
 .btn_inicio{
+    width: 20%;
     height: 10%;
     background: var(--degradado);
     box-shadow: 5px 5px 10px rgb(87, 86, 86) ;
@@ -98,18 +115,19 @@
     background-color: #3a3427
 }
 
-.descripcion_fondo{
+/* .descripcion_fondo{
     width: 70%;
     background: #837561 url(../images/motivo3.png) no-repeat  ;
     background-size: cover;
     background-blend-mode: luminosity;
     filter: brightness(0.8);
     box-shadow: 10px 10px  10px  rgba(65, 64, 64, 0.336);
-}
+}*/
+
 .description_text {
+    height: 90%;
     background-color: #251d1d;
-    min-width: 50%;
-    flex: 0 0 50vw;
+    flex: 0 0 45vw;
 }
 
 .description_text_img{
@@ -119,8 +137,8 @@
     background-position: 40% 100%;
     height: 60%;
     min-width: 20vh;
-    flex: 0 0 25vw ;
-    left: -5%;
+    flex: 0 0 40vw ;
+    left: -2%;
 
 }
 
@@ -133,7 +151,7 @@
 }
 
 .sobre_nos{
-    min-height: 80vh;
+    min-height: 85vh;
 }
 
 
@@ -146,19 +164,19 @@
     mix-blend-mode: overlay;
 }
 .texto_sobre_nos{
-    min-height: 90vh;
     width: 80%;
     height: fit-content;
+    min-height: 70vh;
     mix-blend-mode:overlay;
 }
 
 .tarjeta_contenedor{
-    min-height: fit-content;
+    height: fit-content;
     display: flex;
 }
 
 .tarjeta{
-    height: 55vh;
+    height: 50vh;
     color: white;
     min-width:fit-content;
     background-color: #42403f;
@@ -174,8 +192,7 @@
 
 .dif{
     background-color: rgb(134, 134, 134);
-    min-height: 80vh;
-    height: fit-content;
+    height: 70vh;
     padding: 2% 10%;
 }
 .dif_texto{
@@ -185,7 +202,7 @@
 .dif_texto  .texto1 {
     flex: 1 0 20vw;
 }
-.dif_texto  h5 {
+.dif_texto  p {
     flex: 3 0 20vw;
 }
 
@@ -206,8 +223,51 @@
     color: rgba(255, 255, 255, 0.589);
 }
 
-    
-footer{
-    height: 20vh;
-    background-color: #252524;
+
+@media (max-width: 2400px) {
+    .descripcion{height: 90vh;}
+    .description_text{height: 80%;}
+    .dif{height: 70vh;}
+    .dif_texto{height: 80%;}
+    .texto_sobre_nos{height: 30vh;}
+    .pilares{height: 75vh;}
+    .pil_img{width: 50%;}
+}
+@media (max-width: 1800px) {
+    .inicio{height: 80vh;}
+    .transicion{background-color: #000000d7;}
+    .description_text_img{
+        flex-basis: 35%;
+        height: 50%;
+    }
+    .pilares{height: 60vh;}
+    .pil_img{width: 55%;}
+    .tarjeta_contenedor{max-width: 60vw;}
+    .tarjeta{
+        height: 30vh;
+        flex-basis: 35%;
+    }
+}
+@media (max-width: 1000px) {
+    .inicio{
+        height: 100vh;
+        overflow:hidden;
+    }
+    .carousel{
+        height: 70%;
+        background:rgba(0, 0, 0, 0.482) url(../images/slide/back2.png) no-repeat;
+        background-size: cover;
+        background-blend-mode: color-dodge;
+        background-position: 100% 0%;
+    }
+    .contenedor_inicio{
+        background-color: #151515;
+        width: 100vw;
+        height: 30%;
+    }
+    .transicion{
+        visibility: hidden;
+        position: absolute;
+    }
+
 }

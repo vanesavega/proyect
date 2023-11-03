@@ -1,3 +1,10 @@
+:root{
+    --colorAfter : linear-gradient(90deg, #ca033f 12.48%, #962db6 47.55%, #1e15a0 83.54%);
+    --color_blanco: linear-gradient(90deg, #d6cdd0 12.48%, #706f6f 47.55%, #050505 83.54%);
+    --color_naranja: linear-gradient(90deg, rgb(238, 184, 166) 12.48%, rgb(196, 65, 0) 47.55%, #7e2200 83.54%);
+    --color_rojo: linear-gradient(90deg, rgb(235, 2, 2) 12.48%, rgb(165, 26, 79) 47.55%, rgb(167, 72, 89) 83.54%);
+    --color_morado: linear-gradient(90deg, rgb(208, 2, 235) 12.48%, rgb(75, 26, 165) 47.55%, rgb(7, 18, 119) 83.54%);
+}
 *{
     margin: 0;
     padding: 0
@@ -5,6 +12,10 @@
 
 body{
     background: linear-gradient(180deg, #100F0F 28.63%, #24293A 50%, #6B1A5A 70.83%, #3C2347 86.98%);
+}
+.menu{
+    background-color:rgba(32, 32, 32, 0.84) ;
+    height: 2vh;
 }
 .game_fondo{
     background: url(../images/motivo\ gm.png) no-repeat center ;
@@ -56,7 +67,7 @@ h1{
 }
 
 .section{
-    width: 100%;
+    width: 98%;
     height: 100vh;
     background-color: #000000c5;
 }
@@ -66,18 +77,21 @@ h1{
     min-height: 110vh;
 }
 .mosaico{
+    height: 85vh;
     box-sizing:border-box;
     resize: none;
 }
+.row_img{
+    background-color: #1c1c1c;
+}
 .mosaico_img{
-    border: solid 5px red;
-    object-fit: fill;
     height: 100%;
     width: 24%;
+    object-fit: cover;
+    align-self:flex-end;
 }
 .game_c_conatiner{
     height:fit-content;
-
     background-color: rgb(0, 0, 0);
 }
 .color{
@@ -101,7 +115,7 @@ h1{
     bottom: -2%;
     left: -2%;
     background-color: white;
-    background: linear-gradient(90deg, #ca033f 12.48%, #962db6 47.55%, #1e15a0 83.54%);
+    background: var(--colorAfter);
     background-size: 300% 500%;
     animation: change 3s infinite ease-in-out;
     z-index: -1;
