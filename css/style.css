@@ -127,7 +127,7 @@
 .description_text {
     height: 90%;
     background-color: #251d1d;
-    flex: 0 0 45vw;
+    flex: 1 0 45vw;
 }
 
 .description_text_img{
@@ -192,7 +192,7 @@
 
 .dif{
     background-color: rgb(134, 134, 134);
-    height: 70vh;
+    min-height: 70vh;
     padding: 2% 10%;
 }
 .dif_texto{
@@ -207,7 +207,7 @@
 }
 
 .pilares{
-    height: 98vh;
+    min-height: 50vh;
 }
 .pilares_fondo{
     background-color: #000000;
@@ -233,14 +233,14 @@
     .pilares{height: 75vh;}
     .pil_img{width: 50%;}
 }
-@media (max-width: 1800px) {
+@media (max-width: 1000px) {
     .inicio{height: 80vh;}
     .transicion{background-color: #000000d7;}
     .description_text_img{
         flex-basis: 35%;
         height: 50%;
     }
-    .pilares{height: 60vh;}
+    .pilares{height: 40vh;}
     .pil_img{width: 55%;}
     .tarjeta_contenedor{max-width: 60vw;}
     .tarjeta{
@@ -248,7 +248,7 @@
         flex-basis: 35%;
     }
 }
-@media (max-width: 1000px) {
+@media (max-width: 500px) {
     .inicio{
         height: 100vh;
         overflow:hidden;
@@ -269,5 +269,9 @@
         visibility: hidden;
         position: absolute;
     }
-
+    .description_text{flex-basis: 90vw; margin-left: 0;}
+    .dif_texto{flex-basis: 90vw; min-width: 90vw;}
+    .texto_sobre_nos{flex-basis: 90vw;}
+    .pilares{height: 75vh;}
+    .pil_img{width: 50%;}
 }
